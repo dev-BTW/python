@@ -8,3 +8,9 @@ print(string1 + string2 + string3 + string4 + string5)
 print("Hello " * 5)
 print("Hello " * (5+4)) #print("Hello " * 5+4) will throw an error
 print("Hello " * 5 + "4")
+
+today = "friday"
+print("day" in today) #True
+print("fri" in today) #True
+print("thur" in today) #False
+print("fri" in "thur") #False

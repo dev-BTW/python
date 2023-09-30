@@ -1,3 +1,5 @@
+"""Backwards slicing can be done by using a negative step"""
+
 letters ="abcdefghijklmnopqrstuvwxyz"
 
 backwards = letters[25:-27:-1]
