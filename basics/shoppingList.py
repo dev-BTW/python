@@ -15,6 +15,7 @@ print("_"*40)
 
 for item in shopping_List:
     if item == "pasta":
-        continue                        #use to skip a code block for specified iterations    
+        continue                        #use to skip a code block for specified iterations
+    
     else:
         print("Buy "+ item)
