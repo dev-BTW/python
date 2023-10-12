@@ -7,5 +7,5 @@ multiplier = 8
 answer = 0
 
 for i in range(multiplier):
-    answer+=5
+    answer+=5 
 print(answer)
