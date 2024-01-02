@@ -13,3 +13,5 @@ print("\n")
 
 print(len(even))
 print(len(odd))
+
+print("mississippi".count("iss"))
