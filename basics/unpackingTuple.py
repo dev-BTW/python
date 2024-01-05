@@ -15,3 +15,13 @@ x,y,z = data  #unpacking tuple
 print(x)
 print(y)
 print(z)
+
+
+#Unpacking A List
+print("Unpacking a List")
+dataList = [1,2,7]
+x,y,z = dataList
+
+print(x)
+print(y)
+print(z)
