@@ -9,6 +9,7 @@ print(Numbers)
 print(Numbers[0])
 print(Numbers[1])
 
+#Nested Indexing
 print(Numbers[0][0])
 print(Numbers[0][1][1:])
 print(Numbers[0][1][:3])
@@ -26,3 +27,5 @@ print(Subjects[0])
 print(Subjects[1])
 
 print(Subjects[0][1][2])
+
+#can nest list and tuple together

@@ -11,7 +11,8 @@ for album in albums:
           .format(Name,Artist,Year))
     
 
-    
+#Gives same output as above
 for Name,Artist,Year in albums:
     print("Name: {0} \nArtist: {1} \nYear: {2} \n"
           .format(Name,Artist,Year))
+    
