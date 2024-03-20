@@ -19,9 +19,17 @@ REVERSE = '\u001b[7m'
 #print("And this as well")  #Continues to print red until we cancel it 
 
 
-def colour_print(text:str,effect:str):
+def colour_print(text:str,effect:str)->None:
     output_string = "{0}{1}{2}".format(effect,text,RESET)
     print(output_string)
+
+
+def starEffect(text:str,*effects:str)->None:
+    #here '*effect' allows us to pass multiple parameters
+    #due to which we can pass multiple effects like red and bold
+    effectString = "".join(effects)
+    outputString = "{0}{1}{2}".format(effectString,text,RESET)
+    print(outputString)
 
 print(colour_print("Hello World",BLACK))
 print(colour_print("Hello World",RED))
@@ -34,3 +42,11 @@ print(colour_print("Hello World",WHITE))
 print(colour_print("Hello World",BOLD))
 print(colour_print("Hello World",UNDERLINE))
 print(colour_print("Hello World",REVERSE))
+
+#starEffect
+
+print()
+starEffect("Hello World",RED,BOLD) #prints red and bold
+starEffect("Hello World",RED) #prints just in red
+
+
