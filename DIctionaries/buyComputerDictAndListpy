@@ -1,0 +1,32 @@
+availableParts = {
+    "1":"Computer",
+    "2":"Monitor",
+    "3":"Keyboard",
+    "4":"Mouse ",
+    "5":"HDMI Cable",
+    "6":"DVD Drive"
+}
+
+
+currectChoice = None
+partsDict = {} #empty dictionary
+
+while currectChoice!='0':
+    if currectChoice in availableParts:
+        chosenPart = availableParts[currectChoice]
+        if currectChoice in partsDict:
+            #already there so remove it
+            print(f"Removing {partsDict[currectChoice]}")
+            partsDict.pop(currectChoice) #.pop to remove from dicyionary
+        else:
+            print(f"Adding {chosenPart}")
+            partsDict[currectChoice]=chosenPart
+
+            
+        print(f"Your list now contains {partsDict}")
+    else:
+        print("Please choose from the available parts below")
+        for key,value in availableParts.items():
+            print(f"{key}:{value}")
+        print("0 to finish")
+    currectChoice=input("> ")
