@@ -13,7 +13,7 @@ vehicles = {
 vehicles['swift'] = 'Suzuki Swift'
 vehicles['toy'] = 'Glider'
 del(vehicles['swift'])   #delete value from a dict
-vehicles['toy']= 'Nissan GTR'
+vehicles['toy']= 'Nissan GTR'  #update a value
 
 #for i in vehicles:
 #    print(i,vehicles[i],sep=", ")

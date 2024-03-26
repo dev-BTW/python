@@ -9,7 +9,7 @@ availableParts = {
 
 
 currectChoice = None
-partsList = []
+partsList = [] #empty list for cart
 
 while currectChoice!='0':
     if currectChoice in availableParts:

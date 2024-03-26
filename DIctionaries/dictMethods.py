@@ -36,5 +36,3 @@ print(40*"~")
 d.update(d2)  #Appends keys if doesn't exist or Updates values of existing key based on new dict
 for key,val in d.items():
     print(f"{key}:{val}")
-
-
