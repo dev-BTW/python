@@ -13,7 +13,7 @@ cars = {
 }
 
 things = animals
-newThings = animals.copy()  #Creates a shallow copy of the original dict
+newThings = animals.copy()  #Creates a shallow copy (coppies reference to the value) of the original dict
 
 
 animals["Teddy"]="Toy"   #Both animals and things refer to same dict
