@@ -9,4 +9,13 @@ print(superSecret)
 #Before using hashlib the strings must be encoded
 #For more understanging check basics/encodedVals.py file
 originalHash= hashlib.sha256(superSecret.encode('utf8'))    #converts  
-print(originalHash)
+print(f"SHA256 {originalHash.hexdigest()}")
+superSecret+=" and spaghetti"
+
+changedHash = hashlib.sha256(superSecret.encode('utf8'))
+print(changedHash.hexdigest())
+
+if originalHash==changedHash:
+    print("Code not changed")
+else:
+    print("Code modified")
