@@ -1,4 +1,4 @@
-"""WAP a program that will return a deep copy of a dict without using copy module"""
+"""Write a program that will return a deep copy of a dict without using copy module"""
 
 inventory = {
     "Sword":1,
